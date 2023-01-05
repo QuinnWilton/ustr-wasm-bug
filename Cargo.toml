@@ -1,0 +1,12 @@
+[package]
+name = "ustr-wasm-bug"
+version = "0.1.0"
+authors = ["Quinn Wilton <quinn@quinnwilton.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.63"
+ustr = { git = "https://github.com/anderslanglands/ustr/", rev = "c2b61f80301335cb1989ddf55322e00de85a62c4", features = ["serialization"] }

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+</head>
+
+<body>
+    <script type="module">
+        import init, { reproduce } from './pkg/ustr_wasm_bug.js';
+
+        async function run() {
+            await init();
+
+            reproduce();
+        }
+
+        run();
+    </script>
+</body>
+
+</html>
